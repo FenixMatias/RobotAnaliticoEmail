@@ -1,0 +1,9 @@
+Hola,
+
+Este es el resultado del análisis para la ciudad {0} y el valor es de {1}.
+
+Se despide atte.
+
+R2-D2
+
+*Mensaje Robotizado*

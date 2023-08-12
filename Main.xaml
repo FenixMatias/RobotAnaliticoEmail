@@ -1,0 +1,310 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1059.2,3628" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Activities.System.Collections.Filters</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence global" sap:VirtualizedContainerService.HintSize="828,3563.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Password" />
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="ListaEmailSinLeer" />
+      <Variable x:TypeArguments="s:String[]" Name="ArrayCuerpo" />
+      <Variable x:TypeArguments="x:String" Name="Asunto" />
+      <Variable x:TypeArguments="s:String[]" Name="ArrayFiltro" />
+      <Variable x:TypeArguments="x:String" Name="Ciudad" />
+      <Variable x:TypeArguments="x:Double" Name="Precio" />
+      <Variable x:TypeArguments="x:Double" Name="Superficie" />
+      <Variable x:TypeArguments="x:String" Name="Plantilla" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetPassword DisplayName="Private: Get Password gmail" sap:VirtualizedContainerService.HintSize="765.6,24.8" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkqqlQim53UmlCP4Kc2VmMwAAAAACAAAAAAAQZgAAAAEAACAAAADkzch3NltEFeDsfBwO+v0tkmPN0TquxPhFjd1hYlj6wAAAAAAOgAAAAAIAACAAAAAdNA25cGx+MFwXobs6H7vv56zpgTj4IaxwaB6ZQWsuZiAAAABNP/R9qpp8ozcsn3WPKamida32DjeFAsP86AJqcN4qxUAAAADdmxOvA6hwwd6B2NzJEvmb07W6EICGXdpRTAky1Lhit3P9wkvCY0ukudESoYEY+59giyQ/bEMHnN5T2afb+TwO" Result="[Password]" />
+    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages gmail" Email="matiaszodiaco@gmail.com" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="765.6,24.8" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[ListaEmailSinLeer]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[Password]" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="30" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each ListaEmailSinLeer" sap:VirtualizedContainerService.HintSize="765.6,3321.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ListaEmailSinLeer]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="snm:MailMessage">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="email" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="732,3133.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="688.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Asunto]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[email.Subject.ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line Asunto" sap:VirtualizedContainerService.HintSize="688.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Asunto]" />
+            <Assign DisplayName="Assign cuerpo" sap:VirtualizedContainerService.HintSize="688.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[ArrayCuerpo]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[email.Headers("PlainText").Split(Environment.NewLine.ToArray, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Assign Ciudad" sap:VirtualizedContainerService.HintSize="688.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Ciudad]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[ArrayCuerpo(0)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line Cuerpo" sap:VirtualizedContainerService.HintSize="688.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[Ciudad]" />
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="688.8,2418.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="Resultado_Inmuebles.xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="655.2,2308.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Assign ArraryFiltro" sap:VirtualizedContainerService.HintSize="592.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[ArrayFiltro]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[{Ciudad}]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ExcelFilterTable ColumnName="COMUNA" DisplayName="Filter Table Ciudad" FilterOptions="[ArrayFiltro]" sap:VirtualizedContainerService.HintSize="592.8,88" sap2010:WorkflowViewState.IdRef="ExcelFilterTable_2" SheetName="Resumen" TableName="Tabla1" />
+                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'excel.exe Resultado_Inm...'" sap:VirtualizedContainerService.HintSize="592.8,1947.2" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="08a1929e29a0fd70e2bd8ab81c5d9d12" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Resultado_Inmuebles.xlsx - Excel' /&gt;">
+                      <ui:WindowScope.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="559.2,1800" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey Ctrl+e" sap:VirtualizedContainerService.HintSize="496.8,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="e" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3351ea82-b7c4-4c46-980c-9fb564528a43">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey Ctrl+c" sap:VirtualizedContainerService.HintSize="496.8,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="c" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e25d957a-ea82-45a5-a304-86133fca9da5">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey Ctrl+pgdn" sap:VirtualizedContainerService.HintSize="496.8,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="pgdn" KeyModifiers="Ctrl" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="2eba2725-2a19-4ed8-aab6-1303743124ca">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey Ctrl+e 2" sap:VirtualizedContainerService.HintSize="496.8,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_9" Key="e" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3351ea82-b7c4-4c46-980c-9fb564528a43">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey Ctrl+v" sap:VirtualizedContainerService.HintSize="496.8,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="v" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a9264f58-c36a-48b2-aa6d-78d6e4349ba6">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch Asunto" Expression="[Asunto]" sap:VirtualizedContainerService.HintSize="496.8,820" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                              <Sequence x:Key="Resultado Análisis Precio Vivienda" DisplayName="Sequence switch" sap:VirtualizedContainerService.HintSize="449.6,609.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExcelReadCell Cell="A2" DisplayName="Read Cell resultado promedio Precio" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelReadCell_3" SheetName="Resultado">
+                                  <ui:ExcelReadCell.Result>
+                                    <OutArgument x:TypeArguments="x:Double">[Precio]</OutArgument>
+                                  </ui:ExcelReadCell.Result>
+                                </ui:ExcelReadCell>
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[Precio.ToString]" />
+                                <ui:ReadTextFile File="{x:Null}" Content="[Plantilla]" DisplayName="Read Text File Plantilla" FileName="Plantilla.txt" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[String.Format(Plantilla, Ciudad, Precio)]" DisplayName="Send SMTP Mail Message Precio" Email="matiaszodiaco@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[email]" Password="[Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Análisis Precio Vivienda en &quot; + Ciudad]" To="[email.From.ToString]">
+                                  <ui:SendMail.Files>
+                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                  </ui:SendMail.Files>
+                                </ui:SendMail>
+                              </Sequence>
+                              <Sequence x:Key="Resultado Análisis Superficie Vivienda" DisplayName="Sequence switch" sap:VirtualizedContainerService.HintSize="449.6,609.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExcelReadCell Cell="B2" DisplayName="Read Cell resultado promedio" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Resultado">
+                                  <ui:ExcelReadCell.Result>
+                                    <OutArgument x:TypeArguments="x:Double">[Superficie]</OutArgument>
+                                  </ui:ExcelReadCell.Result>
+                                </ui:ExcelReadCell>
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[Superficie.ToString]" />
+                                <ui:ReadTextFile File="{x:Null}" Content="[Plantilla]" DisplayName="Read Text File Plantilla" FileName="Plantilla.txt" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+                                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[String.Format(Plantilla, Ciudad, Superficie)]" DisplayName="Send SMTP Mail Message Superficie" Email="matiaszodiaco@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,146.4" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[email]" Password="[Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Análisis Superficie Vivienda en &quot; + Ciudad]" To="[email.From.ToString]">
+                                  <ui:SendMail.Files>
+                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                  </ui:SendMail.Files>
+                                </ui:SendMail>
+                              </Sequence>
+                            </Switch>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:WindowScope.Body>
+                    </ui:WindowScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
